@@ -1,0 +1,9 @@
+<div class="products">
+  <div class="products__selected">
+    <div *ngIf="!selectedProduct">Nothing selected</div>
+    <div *ngIf="selectedProduct">Selected product: <strong>{{ selectedProduct.brand }} {{ selectedProduct.model }}</strong></div>
+  </div>
+  <div class="products-list">
+      <app-product *ngFor="let product of products" [product]="product" [selectedOnParent]="selectedProduct" (selectedProductEvent)="handleSelectedProductEvent($event)"></app-product>      
+  </div>
+</div>

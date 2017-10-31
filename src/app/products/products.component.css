@@ -1,0 +1,18 @@
+.products {
+    text-align: left;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    border: 2px solid rgb(46, 187, 223);
+}
+
+.products__selected {
+    min-width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.products-list {
+    min-width: 100%;
+    clear: both;
+}

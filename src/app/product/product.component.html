@@ -1,0 +1,9 @@
+<div class="product" [class.selected]="selectedOnParent && selectedOnParent.id === product.id">
+  <h2>{{ product.model }}</h2>
+  <h3>{{ product.brand }}</h3>
+  <p>Color: {{ product.color }}</p>
+  <div class="product__image">
+    <img [src]="product.imageUrl">
+  </div>
+  <button class="product__select-button" (click)="selectProduct(product)">Select Product</button>
+</div>

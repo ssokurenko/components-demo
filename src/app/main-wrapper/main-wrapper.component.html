@@ -1,0 +1,8 @@
+<div class="main-wrapper">
+  <h1>Demo Store</h1>
+  <p>Demonstrates connection between nested Angular components.</p>
+  <p>Data goes down, events go up.</p>
+  <div *ngIf="!selectedProduct">Nothing selected</div>
+  <div *ngIf="selectedProduct">Selected product: <strong>{{ selectedProduct.brand }} {{ selectedProduct.model }}</strong></div>
+  <app-products [products]="products" (selectedProductEvent)="handleSelectedProductEvent($event)"></app-products>
+</div>
